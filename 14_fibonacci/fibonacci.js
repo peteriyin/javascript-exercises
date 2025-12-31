@@ -1,4 +1,15 @@
-const fibonacci = function() {
+const fibonacci = function (fib) {
+    if (fib < 0) return "OOPS"
+    if (fib == 0) return 0;
+    if (fib == 1) return 1;
+    let a = 1;
+    let b = 1;
+    for (let i = 3; i <= (fib); i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+    };
+    return b;
 
 };
 
